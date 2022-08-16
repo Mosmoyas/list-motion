@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.right {
+    display: block;
+    width: 50%;
+    height: 600px;
+    margin: 4px;
+    padding: 10px;
+
+}
+
+.list {
+    Padding: 10px;
+    list-style: none;
+    border: 1px solid #53665d;
+    width: 40%;
+    margin: 5px;
+    background-color: #05224d;
+    border-radius: 30px 50px 50px 30px;
+    color: #e9e9d4;
+    font-weight: 600;
+    transition: all 1s .1s ease-in-out;
+}
+
+.list::first-letter {
+    color: red;
+}
+
+.list:hover {
+    color: rgb(255, 0, 0);
+    border: none;
+    outline: none;
+    width: 0.5px;
+    text-indent: -10px;
+    box-shadow: 10px 10px 1px #939e99 inset;
+    box-shadow: 16px -6px 13px #b2c931;
+    box-shadow: 6px 6px 13px #4c73ad;
+    letter-spacing: 5px;
+    font-size: 20px;
+
+    font-weight: 800;
+}
+
+.list::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid;
+    border-color: transparent transparent transparent rgb(75, 88, 201);
+    float: left;
+    margin-left: -11px;
+    text-indent: 1px;
+}
